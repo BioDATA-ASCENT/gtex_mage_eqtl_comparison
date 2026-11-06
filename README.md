@@ -1,9 +1,7 @@
 # GTEx vs. MAGE eQTL comparison
 
-Comparison of expression quantitative trait loci (eQTLs) from  
-[GTEx](https://www.gtexportal.org/home/downloads/adult-gtex/qtl) with eQTLs from the  
-[MAGE study](https://github.com/mccoy-lab/MAGE) (Multi-ancestry Analysis of Gene Expression),  
-to identify eQTLs shared across populations and eQTLs that are population-differentiated.
+Comparison of expression quantitative trait loci (eQTLs) from [GTEx](https://www.gtexportal.org/home/downloads/adult-gtex/qtl) with eQTLs from the  
+[MAGE study](https://github.com/mccoy-lab/MAGE) (Multi-ancestry Analysis of Gene Expression), to identify eQTLs shared and transferable across populations and eQTLs that are population-differentiated.
 
 ## Study Motivation
 
