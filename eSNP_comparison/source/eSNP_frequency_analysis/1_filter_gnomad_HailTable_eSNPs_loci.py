@@ -4,7 +4,7 @@ import pandas as pd
 import hail as hl
 hl.init(default_reference='GRCh38') #,min_block_size=128
 
-## Load meSNP location file and preprocess it
+## Load eSNP location file and preprocess it
 data = pd.read_csv("~/code_athon/results/variant_key_coordinates.csv", sep="\t")
 
 ht = hl.Table.from_pandas(data)

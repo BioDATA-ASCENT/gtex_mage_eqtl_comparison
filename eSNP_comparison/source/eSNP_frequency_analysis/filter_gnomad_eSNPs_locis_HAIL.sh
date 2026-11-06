@@ -15,4 +15,4 @@ conda activate hail
 export PYSPARK_SUBMIT_ARGS='--driver-memory 16g --executor-memory 16g pyspark-shell'
 
 # Now run python script
-python /grid/chambwe/home/founta/code_athon/source/filter_gnomad_HailTable_meSNPs_loci.py
+python /grid/chambwe/home/founta/code_athon/source/filter_gnomad_HailTable_eSNPs_loci.py
