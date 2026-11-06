@@ -32,9 +32,9 @@ matters for interpreting GWAS signals and for equitable use of functional genomi
 
 ## Data sources
 
-| Dataset | Source | Version |  
-|---|---|---|  
-| GTEx eQTLs (fine-mapped variant-gene pairs) | https://www.gtexportal.org/home/downloads/adult-gtex/qtl v11|   
+| Dataset | Source | 
+|---|---|
+| GTEx eQTLs (fine-mapped variant-gene pairs) (v11) | https://www.gtexportal.org/home/downloads/adult-gtex/qtl |   
 | MAGE eQTLs and expression | https://github.com/mccoy-lab/MAGE |   
 | Allele frequencies | gnomAD genomes v4.1.0, 1000 Genomes (1KGP), HGDP | 
 
