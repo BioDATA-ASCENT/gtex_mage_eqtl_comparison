@@ -1,0 +1,7 @@
+PLINK v2.0.0-a.6.24LM AVX2 Intel (15 Sep 2025)     cog-genomics.org/plink/2.0/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to plink2.log.
+Options in effect:
+  --vcf CCDG_14151_B01_GRM_WGS_2020-08-05_chr1.filtered.shapeit2-duohmm-phased.vcf.gz  
+
+Start time: Wed Nov  4 11:21:07 2026

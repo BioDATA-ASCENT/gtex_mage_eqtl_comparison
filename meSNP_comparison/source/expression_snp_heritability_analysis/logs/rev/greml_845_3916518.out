@@ -1,0 +1,81 @@
+[Wed Nov  4 12:29:09 EST 2026] Running GREML for ENSG00000123689.6 (SLURM_ARRAY_TASK_ID=845, OFFSET=0, INDEX=845)...
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:29:11 EST on Wed Nov 04 2026.
+Hostname: bam03
+
+Accepted options:
+--grm /grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples
+--pheno /grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt
+--mpheno 845
+--covar /grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt
+--qcovar /grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt
+--reml
+--out /grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000123689.6
+--thread-num 4
+
+Note: the program will be running on 4 threads.
+
+Reading IDs of the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+731 IDs are read from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+Reading the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+GRM for 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+Reading phenotypes from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+There are 976 traits specified in the file [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Trait #845 is included for analysis.
+Non-missing phenotypes of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Reading quantitative covariate(s) from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+10 quantitative covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+Reading discrete covariate(s) from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+1 discrete covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+
+10 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+731 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+731 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 1.07527  1.0968
+logL: -631.32
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-630.96	0.96103	1.20363	
+2	-630.44	0.71254	1.44151	
+3	-629.96	0.70774	1.45100	
+4	-629.96	0.70756	1.45118	
+5	-629.96	0.70755	1.45118	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 2.10938
+logL: -633.69057
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-633.68	2.10931	
+2	-633.68	2.10916	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.707551	0.277647
+V(e)	1.451182	0.251125
+Vp	2.158733	0.119395
+V(G)/Vp	0.327762	0.121990
+
+Sampling variance/covariance of the estimates of variance components:
+7.708778e-02	-6.294826e-02	
+-6.294826e-02	6.306394e-02	
+
+Summary result of REML analysis has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000123689.6.hsq].
+
+Analysis finished at 12:29:11 EST on Wed Nov 04 2026
+Overall computational time: 0.38 sec.
+[Wed Nov  4 12:29:11 EST 2026] Done: ENSG00000123689.6

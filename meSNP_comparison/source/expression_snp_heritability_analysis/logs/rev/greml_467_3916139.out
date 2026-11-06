@@ -1,0 +1,86 @@
+[Wed Nov  4 12:28:23 EST 2026] Running GREML for ENSG00000162627.17 (SLURM_ARRAY_TASK_ID=467, OFFSET=0, INDEX=467)...
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:28:24 EST on Wed Nov 04 2026.
+Hostname: bam07
+
+Accepted options:
+--grm /grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples
+--pheno /grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt
+--mpheno 467
+--covar /grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt
+--qcovar /grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt
+--reml
+--out /grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000162627.17
+--thread-num 4
+
+Note: the program will be running on 4 threads.
+
+Reading IDs of the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+731 IDs are read from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+Reading the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+GRM for 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+Reading phenotypes from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+There are 976 traits specified in the file [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Trait #467 is included for analysis.
+Non-missing phenotypes of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Reading quantitative covariate(s) from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+10 quantitative covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+Reading discrete covariate(s) from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+1 discrete covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+
+10 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+731 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+731 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 1.62907 1.66411
+logL: -761.241
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-760.64	1.26650	1.92055	
+2	-758.95	0.60232	2.40666	
+3	-757.84	0.63260	2.38678	
+4	-757.82	0.65324	2.37337	
+5	-757.81	0.69746	2.34494	
+6	-757.80	0.69568	2.34666	
+7	-757.80	0.69578	2.34657	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 3.00343
+logL: -762.65272
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-759.97	3.00136	
+2	-759.97	2.99995	
+3	-759.97	2.99690	
+4	-759.97	2.99690	
+5	-759.97	2.99690	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.695780	0.366346
+V(e)	2.346574	0.346223
+Vp	3.042354	0.165651
+V(G)/Vp	0.228698	0.116716
+
+Sampling variance/covariance of the estimates of variance components:
+1.342092e-01	-1.133197e-01	
+-1.133197e-01	1.198707e-01	
+
+Summary result of REML analysis has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000162627.17.hsq].
+
+Analysis finished at 12:28:24 EST on Wed Nov 04 2026
+Overall computational time: 0.43 sec.
+[Wed Nov  4 12:28:24 EST 2026] Done: ENSG00000162627.17

@@ -1,0 +1,84 @@
+[Wed Nov  4 13:43:09 EST 2026] Running GREML for ENSG00000261654.1 (SLURM_ARRAY_TASK_ID=467, OFFSET=0, INDEX=467)...
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 13:43:09 EST on Wed Nov 04 2026.
+Hostname: bam13
+
+Accepted options:
+--grm /grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples
+--pheno /grid/chambwe/home/founta/code_athon/metadata/gtex_phenotype_chr1.txt
+--mpheno 467
+--covar /grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt
+--qcovar /grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt
+--reml
+--out /grid/chambwe/home/founta/code_athon/data/plink/results/gtex/ENSG00000261654.1
+--thread-num 4
+
+Note: the program will be running on 4 threads.
+
+Reading IDs of the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+731 IDs are read from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+Reading the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+GRM for 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+Reading phenotypes from [/grid/chambwe/home/founta/code_athon/metadata/gtex_phenotype_chr1.txt].
+There are 905 traits specified in the file [/grid/chambwe/home/founta/code_athon/metadata/gtex_phenotype_chr1.txt].
+Trait #467 is included for analysis.
+Non-missing phenotypes of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/gtex_phenotype_chr1.txt].
+Reading quantitative covariate(s) from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+10 quantitative covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+Reading discrete covariate(s) from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+1 discrete covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+
+10 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+731 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+731 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.171014 0.184779
+logL: 5.50156
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	8.30	0.07395	0.26141	
+2	18.24	0.02026	0.30931	
+3	22.46	0.00000	0.32869	(1 component(s) constrained)
+4	23.69	0.00000	0.32893	(1 component(s) constrained)
+5	23.70	0.00000	0.32909	(1 component(s) constrained)
+6	23.70	0.00000	0.32944	(1 component(s) constrained)
+7	23.71	0.00000	0.32944	(1 component(s) constrained)
+8	23.71	0.00000	0.32944	(1 component(s) constrained)
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.33863
+logL: 23.84049
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	23.85	0.33864	
+2	23.85	0.33867	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.000000	0.038917
+V(e)	0.329438	0.038458
+Vp	0.329438	0.017715
+V(G)/Vp	0.000001	0.118131
+
+Sampling variance/covariance of the estimates of variance components:
+1.514517e-03	-1.339845e-03	
+-1.339845e-03	1.478980e-03	
+
+Summary result of REML analysis has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/results/gtex/ENSG00000261654.1.hsq].
+
+Analysis finished at 13:43:10 EST on Wed Nov 04 2026
+Overall computational time: 0.39 sec.
+[Wed Nov  4 13:43:10 EST 2026] Done: ENSG00000261654.1

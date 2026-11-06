@@ -1,0 +1,85 @@
+[Wed Nov  4 12:27:44 EST 2026] Running GREML for ENSG00000127463.15 (SLURM_ARRAY_TASK_ID=152, OFFSET=0, INDEX=152)...
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:27:46 EST on Wed Nov 04 2026.
+Hostname: bam04
+
+Accepted options:
+--grm /grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples
+--pheno /grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt
+--mpheno 152
+--covar /grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt
+--qcovar /grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt
+--reml
+--out /grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000127463.15
+--thread-num 4
+
+Note: the program will be running on 4 threads.
+
+Reading IDs of the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+731 IDs are read from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id].
+Reading the GRM from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+GRM for 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin].
+Reading phenotypes from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+There are 976 traits specified in the file [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Trait #152 is included for analysis.
+Non-missing phenotypes of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/1kgp_phenotype_chr1.txt].
+Reading quantitative covariate(s) from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+10 quantitative covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/data/plink/covariates/genotype_pcs.txt].
+Reading discrete covariate(s) from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+1 discrete covariate(s) of 731 individuals are included from [/grid/chambwe/home/founta/code_athon/metadata/sex_covar.txt].
+
+10 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+731 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+731 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.0398208 0.0407705
+logL: 557.422
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	557.59	0.03278	0.04667	
+2	558.66	0.01741	0.06000	
+3	559.79	0.01706	0.06045	
+4	559.80	0.01680	0.06077	
+5	559.80	0.01621	0.06150	
+6	559.80	0.01614	0.06157	
+7	559.80	0.01613	0.06157	
+8	559.80	0.01613	0.06158	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.07658
+logL: 558.26120
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	558.55	0.07656	
+2	558.55	0.07653	
+3	558.55	0.07653	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.016126	0.010106
+V(e)	0.061576	0.009542
+Vp	0.077702	0.004243
+V(G)/Vp	0.207538	0.126666
+
+Sampling variance/covariance of the estimates of variance components:
+1.021294e-04	-8.758674e-05	
+-8.758674e-05	9.104415e-05	
+
+Summary result of REML analysis has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/results/mage/ENSG00000127463.15.hsq].
+
+Analysis finished at 12:27:46 EST on Wed Nov 04 2026
+Overall computational time: 0.43 sec.
+[Wed Nov  4 12:27:46 EST 2026] Done: ENSG00000127463.15

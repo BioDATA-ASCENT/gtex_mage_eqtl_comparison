@@ -1,0 +1,2 @@
+Error: Invalid --vcf argument ' '.
+For more info, try "plink2 --help <flag name>" or "plink2 --help | more".

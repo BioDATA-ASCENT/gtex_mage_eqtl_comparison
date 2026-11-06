@@ -1,0 +1,17 @@
+PLINK v2.0.0-a.6.24LM AVX2 Intel (15 Sep 2025)     cog-genomics.org/plink/2.0/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /grid/chambwe/home/founta/code_athon/data/plink/chr1.log.
+Options in effect:
+  --geno 0.05
+  --keep expr_samples.txt
+  --maf 0.01
+  --make-bed
+  --max-alleles 2
+  --out /grid/chambwe/home/founta/code_athon/data/plink/chr1
+  --rm-dup exclude-all
+  --set-all-var-ids @:#:$r:$a
+  --snps-only just-acgt
+  --threads 4
+  --vcf CCDG_14151_B01_GRM_WGS_2020-08-05_chr1.filtered.shapeit2-duohmm-phased.vcf.gz
+
+Start time: Wed Nov  4 11:22:54 2026

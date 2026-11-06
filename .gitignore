@@ -1,0 +1,29 @@
+# Raw/input data (stays on the cluster)  
+original_data/
+
+# Large results files  
+global_freq_gnomad_*.tsv
+
+# Genomics file types  
+*.vcf  
+*.vcf.gz  
+*.tbi  
+*.csi  
+*.bam  
+*.bai  
+*.cram  
+*.fastq  
+*.fastq.gz  
+*.fq.gz  
+*.bgen  
+*.pgen  
+*.pvar  
+*.psam  
+*.bim  
+*.fam
+
+# Misc  
+.ipynb_checkpoints/  
+__pycache__/  
+*.log  
+.DS_Store  

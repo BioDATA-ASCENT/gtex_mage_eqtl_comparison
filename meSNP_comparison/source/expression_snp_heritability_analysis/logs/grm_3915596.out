@@ -1,0 +1,41 @@
+[Wed Nov  4 12:10:16 EST 2026] Building GRM...
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:10:16 EST on Wed Nov 04 2026.
+Hostname: bam07
+
+Options: 
+ 
+--bfile /grid/chambwe/home/founta/code_athon/data/plink/chr1 
+--make-grm 
+--out /grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples 
+--thread-num 8 
+
+The program will be running with up to 8 threads.
+Note: GRM is computed using the SNPs on the autosomes.
+Reading PLINK FAM file from [/grid/chambwe/home/founta/code_athon/data/plink/chr1.fam]...
+731 individuals to be included from FAM file.
+731 individuals to be included. 0 males, 0 females, 731 unknown.
+Reading PLINK BIM file from [/grid/chambwe/home/founta/code_athon/data/plink/chr1.bim]...
+1002733 SNPs to be included from BIM file(s).
+Computing the genetic relationship matrix (GRM) v2 ...
+Subset 1/1, no. subject 1-731
+  731 samples, 1002733 markers, 267546 GRM elements
+IDs for the GRM file have been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.id]
+Computing GRM...
+  100% finished in 4.4 sec
+1002733 SNPs have been processed.
+  Used 1002733 valid SNPs.
+The GRM computation is completed.
+Saving GRM...
+GRM has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.bin]
+Number of SNPs in each pair of individuals has been saved in the file [/grid/chambwe/home/founta/code_athon/data/plink/grm/chr1_all_samples.grm.N.bin]
+
+Analysis finished at 12:10:22 EST on Wed Nov 04 2026
+Overall computational time: 5.45 sec.
+[Wed Nov  4 12:10:22 EST 2026] COMPLETED SUCCESSFULLY
